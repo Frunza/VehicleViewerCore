@@ -1,6 +1,6 @@
 import Foundation
 
-public struct EShopNetworkManager: CarsDataProviderProtocol {
+public struct OnlineCarsNetworkManager: CarsDataProviderProtocol {
 
     typealias ResponseParameters = (data: Data?, response: URLResponse?, error: Error?)
     
