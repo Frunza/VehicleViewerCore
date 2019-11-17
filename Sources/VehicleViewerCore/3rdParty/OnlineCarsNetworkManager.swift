@@ -4,6 +4,8 @@ public struct OnlineCarsNetworkManager: CarsDataProviderProtocol {
 
     typealias ResponseParameters = (data: Data?, response: URLResponse?, error: Error?)
     
+    public init() { }
+    
     public func loadCars(onSuccess: @escaping (([RestCar]) -> ()), onFailure: (() -> ())?) {
         let urlString = OnlineCarsUrlUtils.createCarsUrl()
         guard let url = URL(string: urlString) else {
