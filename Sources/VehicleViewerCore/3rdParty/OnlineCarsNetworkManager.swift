@@ -5,7 +5,7 @@ public struct EShopNetworkManager: CarsDataProviderProtocol {
     typealias ResponseParameters = (data: Data?, response: URLResponse?, error: Error?)
     
     public func loadCars(onSuccess: @escaping (([RestCar]) -> ()), onFailure: (() -> ())?) {
-        let urlString = EShopUrlUtils.createCarsUrl()
+        let urlString = OnlineCarsUrlUtils.createCarsUrl()
         guard let url = URL(string: urlString) else {
             Logger.log("Failed to build the cars URL")
             onFailure?()
