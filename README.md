@@ -21,7 +21,7 @@ After installing import the module where you want to use it:
 Swift:
 
 ```swift
-import TestAppCore
+import VehicleViewerCore
 ```
 
 Requirements
